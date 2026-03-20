@@ -25,6 +25,7 @@ def valida(d, m, a):
     return True
 
 def exibe_ds(d, m, a):
+    """"Exibe o dia seguinte relacionada a data informada, sendo d, m, a (dia, mês, ano)."""
     d += 1
     if d > dia_maximo(m, a):
         d = 1
@@ -36,6 +37,7 @@ def exibe_ds(d, m, a):
     print(f'{d}/{m}/{a}')
 
 def main():
+    """Está é a função principal, responsável pelo início da execução do programa."""
     d, m, a = map(int, input('Data? ').split('/'))
 
     if valida(d, m, a):
@@ -43,4 +45,5 @@ def main():
     else:
         print('Data inválida!')
 
+main()
 main()
